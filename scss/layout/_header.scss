@@ -1,8 +1,93 @@
-@import '../variables';
+@import '../base/variables';
 
 .header {
-  color: $red-color;
-  &__title {
-    font-size: 88px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 9%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  &__logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: $black;
+    font-weight: bolder;
+    & i {
+      color: $green;
+    }
+  }
+  &__navbar {
+    & a {
+      margin-left: 2rem;
+      font-size: 1.7rem;
+      color: $black;
+      &:hover {
+        color: $green;
+      }
+    }
+    #nav-close {
+      font-size: 5rem;
+      cursor: pointer;
+      color: $black;
+      display: none;
+    }
+  }
+  &__icons {
+    & a,
+    & div {
+      font-size: 2.5rem;
+      margin-left: 2rem;
+      cursor: pointer;
+      color: $black;
+      &:hover {
+        color: $green;
+      }
+    }
+    #menu-btn {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__navbar {
+      position: fixed;
+      top: 0;
+      left: -110%;
+      background: $white;
+      z-index: 10000;
+      width: 35rem;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      &.active {
+        left: 0;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+      }
+      & a {
+        margin: 1rem 0;
+        font-size: 3rem;
+      }
+      #nav-close {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+      }
+    }
+    #menu-btn {
+      display: inline-block;
+    }
   }
 }

@@ -1,5 +1,41 @@
+@import './variables';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 200ms linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $black;
+  }
+}
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  background-color: grey;
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
 }
