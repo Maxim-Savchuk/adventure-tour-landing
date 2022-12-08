@@ -1,5 +1,4 @@
 @import '../base/variables';
-
 .header {
   position: fixed;
   top: 0;
@@ -105,13 +104,11 @@
     }
   }
 }
-
 @media screen and (max-width: 1200px) {
   .header {
     padding: 2rem;
   }
 }
-
 @media screen and (max-width: 768px) {
   .header {
     &__navbar {

@@ -27,6 +27,28 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
 }
+section {
+  padding: 5rem 9%;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: $border;
+  color: $black;
+  cursor: pointer;
+  background: transparent;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section {
+    padding: 3rem 2rem;
+  }
+}
 
 @media screen and (max-width: 991px) {
   html {
