@@ -55,16 +55,17 @@ section {
     padding: 3rem 2rem;
   }
 }
-
 @media screen and (max-width: 991px) {
   html {
     font-size: 55%;
     scroll-padding-top: 7rem;
   }
 }
-
 @media screen and (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
   }
 }
