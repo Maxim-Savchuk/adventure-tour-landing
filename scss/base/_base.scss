@@ -44,6 +44,12 @@ section {
     color: $white;
   }
 }
+.heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: $black;
+}
 @media screen and (max-width: 1200px) {
   section {
     padding: 3rem 2rem;
