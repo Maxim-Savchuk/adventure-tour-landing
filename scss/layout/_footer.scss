@@ -1,0 +1,45 @@
+@import '../base/variables';
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/footer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 3rem 4rem;
+  & .box-container {
+    @include grid(25rem);
+    & .box {
+      & h3 {
+        font-size: 2rem;
+        padding: 1.5rem 0;
+        color: $white;
+      }
+      & a {
+        display: block;
+        font-size: 1.4rem;
+        color: $white;
+        padding: 1rem 0;
+        & i {
+          color: $green;
+          padding-right: 0.5rem;
+        }
+        &:hover {
+          color: $green;
+          & i {
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+  & .credit {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 2.5rem 1rem 1rem 1rem;
+    font-size: 2rem;
+    color: $white;
+    & span {
+      color: $green;
+    }
+  }
+}
